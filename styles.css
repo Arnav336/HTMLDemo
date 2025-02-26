@@ -384,10 +384,7 @@ header .top-nav .auth-buttons .donate-btn {
 }
 
 .raffle {
-<<<<<<< HEAD
-=======
   font-family: "Roboto", sans-serif;
->>>>>>> 827827e (Footer section done needs formatting)
   position: relative;
   background-color: #fee761;
   padding: 3rem 2rem 6rem;
@@ -401,26 +398,15 @@ header .top-nav .auth-buttons .donate-btn {
   align-items: center;
 }
 .raffle__title {
-<<<<<<< HEAD
-  font-family: "Roboto", sans-serif;
-=======
->>>>>>> 827827e (Footer section done needs formatting)
   font-size: 75px;
   font-weight: 900;
   color: #f4526c;
   line-height: 87.89px;
   width: 524px;
   height: 88px;
-  top: 3713px;
-  left: 479px;
-<<<<<<< HEAD
-  margin-bottom: 1.5rem;
-  text-align: center;
-=======
   margin-bottom: 4.5rem;
   text-align: center;
   margin-top: -1.5rem;
->>>>>>> 827827e (Footer section done needs formatting)
 }
 .raffle__highlight {
   position: relative;
@@ -435,10 +421,7 @@ header .top-nav .auth-buttons .donate-btn {
   display: block;
 }
 .raffle__highlight-text {
-<<<<<<< HEAD
   font-family: "Roboto", sans-serif;
-=======
->>>>>>> 827827e (Footer section done needs formatting)
   position: absolute;
   top: 36%;
   left: 57%;
@@ -479,11 +462,7 @@ header .top-nav .auth-buttons .donate-btn {
   font-weight: 700;
 }
 .raffle__winners {
-<<<<<<< HEAD
   color: #f4526c;
-=======
-  color: red;
->>>>>>> 827827e (Footer section done needs formatting)
   font-weight: 500;
 }
 .raffle__image {
@@ -496,16 +475,8 @@ header .top-nav .auth-buttons .donate-btn {
 }
 .raffle__cta {
   margin: 1rem 0 3rem;
-<<<<<<< HEAD
-}
-.raffle__button {
-  background-color: #f4526c;
-  color: white;
-  font-size: 1.2rem;
-  font-weight: 600;
-=======
-  position: absolute;
-  top: 624px;
+  position: relative;
+  z-index: 10;
 }
 .raffle__button {
   font-family: "Open Sans", sans-serif;
@@ -513,7 +484,6 @@ header .top-nav .auth-buttons .donate-btn {
   color: white;
   font-size: 1.2rem;
   font-weight: bold;
->>>>>>> 827827e (Footer section done needs formatting)
   padding: 1rem 2.5rem;
   border-radius: 5px;
   text-decoration: none;
@@ -533,8 +503,6 @@ header .top-nav .auth-buttons .donate-btn {
   background-color: #0e2822;
   -webkit-clip-path: ellipse(50% 50% at 50% 100%);
           clip-path: ellipse(50% 50% at 50% 100%);
-<<<<<<< HEAD
-=======
 }
 
 .subscribe {
@@ -666,5 +634,4 @@ header .top-nav .auth-buttons .donate-btn {
 .subscribe__footer p {
   font-size: 0.9rem;
   opacity: 0.7;
->>>>>>> 827827e (Footer section done needs formatting)
 }/*# sourceMappingURL=styles.css.map */
