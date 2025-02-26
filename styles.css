@@ -197,6 +197,7 @@ header .top-nav .auth-buttons .donate-btn {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 .event-image img {
@@ -474,8 +475,12 @@ header .top-nav .auth-buttons .donate-btn {
   height: auto;
 }
 .raffle__cta {
-  margin: 1rem 0 3rem;
-  position: relative;
+  position: absolute;
+  bottom: -25px;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
   z-index: 10;
 }
 .raffle__button {
@@ -493,6 +498,9 @@ header .top-nav .auth-buttons .donate-btn {
 }
 .raffle__button:hover {
   background-color: #f12243;
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 .raffle__wave-divider {
   position: absolute;
@@ -501,8 +509,8 @@ header .top-nav .auth-buttons .donate-btn {
   width: 100%;
   height: 50px;
   background-color: #0e2822;
-  -webkit-clip-path: ellipse(50% 50% at 50% 100%);
-          clip-path: ellipse(50% 50% at 50% 100%);
+  -webkit-clip-path: ellipse(150% 50% at 50% 100%);
+          clip-path: ellipse(150% 50% at 50% 100%);
 }
 
 .subscribe {
@@ -510,6 +518,16 @@ header .top-nav .auth-buttons .donate-btn {
   color: white;
   padding: 4rem 2rem;
   position: relative;
+}
+.subscribe__wave-divider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #ffffff;
+  -webkit-clip-path: ellipse(150% 50% at 50% 100%);
+          clip-path: ellipse(150% 50% at 50% 100%);
 }
 .subscribe__container {
   max-width: 1200px;
@@ -634,4 +652,84 @@ header .top-nav .auth-buttons .donate-btn {
 .subscribe__footer p {
   font-size: 0.9rem;
   opacity: 0.7;
+}
+
+/* Additional responsive adjustments */
+@media (max-width: 768px) {
+  /* Header adjustments */
+  .top-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  .top-nav .nav-list {
+    justify-content: center;
+    width: 100%;
+    margin: 15px 0;
+  }
+  .top-nav .auth-buttons {
+    margin-left: 0;
+    margin-bottom: 15px;
+  }
+  /* Hero section adjustments */
+  .Hero-wrapper {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .Hero {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .Hero .hero-section {
+    flex-direction: column;
+  }
+  .Hero .hero-section .hero-content {
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+  .Hero .hero-section .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  .Hero .hero-section .hero-illustration {
+    width: 100%;
+    justify-content: center;
+  }
+  /* Event image adjustment */
+  .event-image {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+  /* Raffle section adjustments */
+  .raffle__title {
+    font-size: 3.5rem;
+    width: auto;
+    height: auto;
+    line-height: normal;
+  }
+  .raffle__highlight-text {
+    font-size: 1.5rem;
+    width: 90%;
+    left: 50%;
+  }
+  /* Subscribe section adjustments */
+  .subscribe__title {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 576px) {
+  /* Countdown adjustment */
+  .countdown {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  /* Raffle smaller text on mobile */
+  .raffle__title {
+    font-size: 2.5rem;
+  }
+  .raffle__highlight-text {
+    font-size: 1.25rem;
+  }
+  .raffle__button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+  }
 }/*# sourceMappingURL=styles.css.map */
