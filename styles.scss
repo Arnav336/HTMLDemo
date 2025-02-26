@@ -429,10 +429,7 @@ header {
   }
 // Raffle Section Styles
 .raffle {
-<<<<<<< HEAD
-=======
-  font-family:'Roboto', sans-serif;
->>>>>>> 827827e (Footer section done needs formatting)
+  font-family: 'Roboto', sans-serif;
   position: relative;
   background-color: #fee761;
   padding: 3rem 2rem 6rem;
@@ -447,26 +444,15 @@ header {
   }
   
   &__title {
-<<<<<<< HEAD
-    font-family: 'Roboto', sans-serif;
-=======
->>>>>>> 827827e (Footer section done needs formatting)
     font-size: 75px;
     font-weight: 900;
     color: #f4526c;
-    line-height:87.89px;
-    width:524px;
-    height:88px;
-    top:3713px;
-    left:479px;
-<<<<<<< HEAD
-    margin-bottom: 1.5rem;
-    text-align: center;
-=======
+    line-height: 87.89px;
+    width: 524px;
+    height: 88px;
     margin-bottom: 4.5rem;
     text-align: center;
     margin-top: -1.5rem;
->>>>>>> 827827e (Footer section done needs formatting)
   }
   
   &__highlight {
@@ -484,22 +470,19 @@ header {
   }
   
   &__highlight-text {
-<<<<<<< HEAD
     font-family: 'Roboto', sans-serif;
-=======
->>>>>>> 827827e (Footer section done needs formatting)
     position: absolute;
     top: 36%;
     left: 57%;
-    right:50%;
+    right: 50%;
     transform: translate(-50%, -50%);
     font-size: 2rem;
     font-weight: 1000;
     margin: 0;
     width: 672px;
-    height:63px;
+    height: 63px;
     text-align: center;
-    rotate:-4.6deg;
+    rotate: -4.6deg;
   }
   
   &__content {
@@ -509,10 +492,6 @@ header {
     width: 100%;
     margin-bottom: 3rem;
     
-<<<<<<< HEAD
-=======
-    
->>>>>>> 827827e (Footer section done needs formatting)
     @media (max-width: 768px) {
       flex-direction: column;
       align-items: center;
@@ -521,12 +500,8 @@ header {
   
   &__text {
     flex: 1;
-<<<<<<< HEAD
     max-width: 600px;
     
-=======
-    max-width: 600px;  
->>>>>>> 827827e (Footer section done needs formatting)
     p {
       font-size: 1.1rem;
       line-height: 1.6;
@@ -540,11 +515,7 @@ header {
   }
   
   &__winners {
-<<<<<<< HEAD
     color: #f4526c;
-=======
-    color: red;
->>>>>>> 827827e (Footer section done needs formatting)
     font-weight: 500;
   }
   
@@ -560,18 +531,8 @@ header {
   
   &__cta {
     margin: 1rem 0 3rem;
-<<<<<<< HEAD
-  }
-  
-  &__button {
-    background-color: #f4526c;
-    color: white;
-    font-size: 1.2rem;
-    font-weight: 600;
-=======
-    position: absolute;
-    top: 624px;
-    
+    position: relative;
+    z-index: 10;
   }
   
   &__button {
@@ -580,7 +541,6 @@ header {
     color: white;
     font-size: 1.2rem;
     font-weight: bold;
->>>>>>> 827827e (Footer section done needs formatting)
     padding: 1rem 2.5rem;
     border-radius: 5px;
     text-decoration: none;
@@ -603,7 +563,6 @@ header {
     clip-path: ellipse(50% 50% at 50% 100%);
   }
 }
-// Subscribe Section
 // Subscribe Section
 .subscribe {
   background-color: #0e2822; // Dark green background
