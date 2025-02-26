@@ -81,7 +81,7 @@ header {
 
               // No hover color change
               &:hover {
-                color: $text-color; 
+                color:yellow; 
               }
             }
           }
@@ -224,6 +224,7 @@ header {
         align-items: center;
         justify-content: center;
         cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
         box-shadow: 0 2px 5px rgba(0,0,0,0.2);
       }
     img {
@@ -530,9 +531,14 @@ header {
   }
   
   &__cta {
-    margin: 1rem 0 3rem;
-    position: relative;
+    position: absolute;
+    bottom: -25px;
+    bottom:-2px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
     z-index: 10;
+
   }
   
   &__button {
@@ -550,6 +556,10 @@ header {
     
     &:hover {
       background-color: darken(#f4526c, 10%);
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+      transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+      
     }
   }
   
@@ -560,7 +570,7 @@ header {
     width: 100%;
     height: 50px;
     background-color: #0e2822;
-    clip-path: ellipse(50% 50% at 50% 100%);
+    clip-path: ellipse(150% 50% at 50% 100%);
   }
 }
 // Subscribe Section
@@ -569,6 +579,16 @@ header {
   color: white;
   padding: 4rem 2rem;
   position: relative;
+  
+  &__wave-divider {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #ffffff; // Change to whatever color comes after
+    clip-path: ellipse(150% 50% at 50% 100%);
+  }
   
   &__container {
     max-width: 1200px;
@@ -707,6 +727,106 @@ header {
     p {
       font-size: 0.9rem;
       opacity: 0.7;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .top-nav {
+    flex-direction: column;
+    align-items: center;
+    
+    .nav-list {
+      justify-content: center;
+      width: 100%;
+      margin: 15px 0;
+    }
+    
+    .auth-buttons {
+      margin-left: 0;
+      margin-bottom: 15px;
+    }
+  }
+  
+  /* Hero section adjustments */
+  .Hero-wrapper {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  
+  .Hero {
+    margin-left: 0;
+    margin-right: 0;
+    
+    .hero-section {
+      flex-direction: column;
+      
+      .hero-content {
+        max-width: 100%;
+        margin-bottom: 2rem;
+        
+        h1 {
+          font-size: 2.5rem;
+        }
+      }
+      
+      .hero-illustration {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  }
+  
+  /* Event image adjustment */
+  .event-image {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+  
+  /* Raffle section adjustments */
+  .raffle {
+    &__title {
+      font-size: 3.5rem;
+      width: auto;
+      height: auto;
+      line-height: normal;
+    }
+    
+    &__highlight-text {
+      font-size: 1.5rem;
+      width: 90%;
+      left: 50%;
+    }
+  }
+  
+  /* Subscribe section adjustments */
+  .subscribe {
+    &__title {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  /* Countdown adjustment */
+  .countdown {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* Raffle smaller text on mobile */
+  .raffle {
+    &__title {
+      font-size: 2.5rem;
+    }
+    
+    &__highlight-text {
+      font-size: 1.25rem;
+    }
+    
+    &__button {
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
     }
   }
 }
