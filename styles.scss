@@ -12,6 +12,8 @@ $text-white: white;
 body {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
+  overflow-x: var(yellow);
+  overflow-y: scroll;
 }
 
 header {
@@ -212,7 +214,7 @@ header {
     flex: 0 0 40%;
     max-width: 400px;
     &__share{
-        position: absolute;
+        position: relative;
         top: 12px;
         right: 12px;
         background-color: white;
@@ -252,6 +254,7 @@ header {
     display: flex;
     gap: 0.75rem;
     margin-bottom: 2rem;
+    font-family: 'Open Sans', sans-serif;
     
     .time-box {
       background-color: #f8f8f8;
@@ -261,18 +264,17 @@ header {
       text-align: center;
       box-shadow: 0 1px 3px rgba(0,0,0,0.1);
       border:1px solid #eee;
-
-      
-      .time-number {
-        font-size: 1.5rem;
-        font-weight: 600;
-        color: #333;
-        margin-bottom: 0.25rem;
-      }
-      
-      .time-label {
-        font-size: 0.8rem;
-        color: #666;
+      height: 60px;
+      width:39px;
+      span{
+        position:relative;
+        width:59px;
+        height:49px;
+        display: block;
+        font-size: 35px;
+        font-weight: 700;
+        color: black;
+        top:-6px;
       }
     }
   }
@@ -349,23 +351,24 @@ header {
   }
   
   .event-card {
+    position:relative;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     background-color: white;
     
-    &:hover {
+    &:hover{
       transform: translateY(-5px);
-      box-shadow: 0 5px 15px rgba(0,0,0,0.15);
     }
     
     &__image-container {
       position: relative;
       height: 240px;
       overflow: hidden;
-      
+      transition: transform 0.3s ease,box-shadow 0.3s ease;
       img {
+        position:absolute;
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -373,7 +376,7 @@ header {
       }
     }
     
-    &__share-button {
+    &__share-button{
       position: absolute;
       top: 12px;
       right: 12px;
@@ -387,10 +390,14 @@ header {
       justify-content: center;
       cursor: pointer;
       box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-      
+      transition: transform 0.3s ease;
+      &:hover{
+        transform: scale(1.25);
+      }
+
       img {
         width: 16px;
-        height: 16px;
+        height: 16px; 
       }
     }
     
@@ -443,7 +450,7 @@ header {
     flex-direction: column;
     align-items: center;
   }
-  
+ 
   &__title {
     font-size: 75px;
     font-weight: 900;
@@ -474,10 +481,10 @@ header {
     font-family: 'Roboto', sans-serif;
     position: absolute;
     top: 36%;
-    left: 57%;
+    left: 51%;
     right: 50%;
     transform: translate(-50%, -50%);
-    font-size: 2rem;
+    font-size: 40px;
     font-weight: 1000;
     margin: 0;
     width: 672px;
@@ -579,6 +586,7 @@ header {
   color: white;
   padding: 4rem 2rem;
   position: relative;
+  width:100%;
   
   &__wave-divider {
     position: absolute;
@@ -587,7 +595,7 @@ header {
     width: 100%;
     height: 50px;
     background-color: #ffffff; // Change to whatever color comes after
-    clip-path: ellipse(150% 50% at 50% 100%);
+    
   }
   
   &__container {
@@ -621,7 +629,16 @@ header {
       flex-direction: column;
     }
   }
-  
+  &__triangleshape{
+    width: 0;
+   height: 0;
+   border-left: 50vw solid transparent;
+   border-right: 50vw solid transparent;
+   border-bottom: 100px solid red;
+   position: absolute;
+   top: -123px;
+   left: 64px;
+}
   &__input {
     flex-grow: 1;
     padding: 1rem;
