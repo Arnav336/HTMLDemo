@@ -1,7 +1,12 @@
 <!--To change
-1)Time box divs
-2)Share icon of the event-section
-3)Triangle shape-->
+1)Time boxes make proper
+2)Triangle shape in raffle
+3)Social Media icons proper arrangement
+4)Study CSS positions,Flex and Grid
+5)Email Subscribe box proper
+6)Make Responsive design
+7)Change the whole thing to BEM format
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -49,46 +54,57 @@
             </div>
         </div>
     </section>          
-    <section class="event-section">
-        <div class="event-container">
-          <!-- Left Side: Image -->
-          <div class="event-image">
-            <img src="Assets/Rectangle.png" alt="Event Image">
-            <button class="event-container__share">
-                <img src="Assets/shareicon.png" alt="Share">
-            </button>
+    <!-- Event Section -->
+    <!-- Event Section -->
+<section class="event-section">
+  <div class="event-container">
+    <!-- Left Side: Image -->
+    <div class="event-image">
+      <img src="Assets/Rectangle.png" alt="Event Image">
+      <button class="event-container__share">
+        <img src="Assets/shareicon.png" alt="Share">
+      </button>
+    </div>
+    
+    <!-- Right Side: Content -->
+    <div class="event-content">
+      <h2>Creative Search Bar and Input Field Design Inspiration</h2>
+      
+      <!-- Timer Boxes -->
+      <div class="countdown">
+        <div class="time-box" data-label="Days"><span>15</span></div>
+        <div class="time-box" data-label="Hours"><span>07</span></div>
+        <div class="time-box" data-label="Min"><span>15</span></div>
+        <div class="time-box" data-label="Sec"><span>15</span></div>
+      </div>
+      
+      <!-- Date and Location -->
+      <div class="event-details">
+        <div class="event-details__date-time">
+          <!-- Date Pair -->
+          <div class="date-block">
+            <span class="icon">📅</span>
+            <strong>February 26, 2021</strong>
           </div>
-          
-          <!-- Right Side: Content -->
-          <div class="event-content">
-            <h2>Creative Search Bar and Input Field Design Inspiration</h2>
-            
-            <!-- Timer Boxes -->
-            <div class="countdown">
-              <div class="time-box"><span>15</span>Days</div>
-              <div class="time-box"><span>07</span>Hours</div>
-              <div class="time-box"><span>15</span>Min</div>
-              <div class="time-box"><span>15</span>Sec</div>
-            </div>
-            
-            <!-- Date and Location -->
-            <div class="event-details">
-              <div class="date-time">
-                <p><span class="icon">📅</span><b>February 26, 2021</b></p>
-                <p><span class="icon">🕗</span><b> 01 : 30 PM</b></p>
-              </div>
-              <div class="location">
-                <span class="icon">📍</span><b>TRIVANDRUM, INDIA</b>
-              </div>
-            </div>
-            
-            <!-- Description -->
-            <p class="event-description">
-              We host regular jam sessions for our coder community on a variety of topics ranging from serverless to open source and everything in between.
-            </p>
+          <!-- Time Pair -->
+          <div class="time-block">
+            <span class="icon">🕗</span>
+            <strong>01 : 30 PM</strong>
           </div>
         </div>
-      </section>
+        <div class="event-details__location">
+          <h4><span class="icon">📍</span> TRIVANDRUM, INDIA</h4>
+        </div>
+      </div>
+      
+      <!-- Description -->
+      <p class="event-description">
+        We host regular jam sessions for our coder community on a variety of topics ranging from serverless to open source and everything in between.
+      </p>
+    </div>
+  </div>
+</section>
+    
       <!--Start of new Event gallery Section-->>
       <section class="event-gallery">
         <div class="event-gallery__container">
