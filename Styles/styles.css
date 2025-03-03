@@ -445,11 +445,15 @@ header .top-nav .auth-buttons .donate-btn {
   flex-direction: column;
   max-width: 854px;
   max-height: 305px;
+  position: relative;
+  left: -204px;
+  top: -108px;
+  overflow: auto;
 }
 .yellow-section__details .yellow-section__description-text {
   font-family: "Roboto", sans-serif;
   font-weight: 900;
-  font-size: 34px;
+  font-size: 30px;
   line-height: 50px;
   color: #0B2A2B;
   margin: 0;
@@ -457,13 +461,19 @@ header .top-nav .auth-buttons .donate-btn {
 .yellow-section__details .yellow-section__description-text span {
   font-family: "Roboto", sans-serif;
   font-weight: 900;
-  font-size: 34px;
+  font-size: 30px;
   line-height: 50px;
   color: #F43C5C;
   margin: 0;
 }
 .yellow-section__details .yellow-section__duck {
   max-width: 370px;
+  position: relative;
+  top: -153px;
+  border: 20px;
+  left: 208px;
+  width: 370px;
+  height: 370px;
 }
 .yellow-section__triangle {
   width: 0;
