@@ -502,11 +502,15 @@ header {
       flex-direction: column;
       max-width: 854px;
       max-height: 305px;
+      position:relative;
+      left:-204px;
+      top:-108px;
+      overflow:auto;
 
       &-text {
         font-family: "Roboto", sans-serif;
         font-weight: 900;
-        font-size: 34px;
+        font-size: 30px;
         line-height: 50px;
         color: #0B2A2B;
         margin: 0;
@@ -514,7 +518,7 @@ header {
         span {
           font-family: "Roboto", sans-serif;
           font-weight: 900;
-          font-size: 34px;
+          font-size: 30px;
           line-height: 50px;
           color: #F43C5C;
           margin: 0;
@@ -524,6 +528,12 @@ header {
 
     .yellow-section__duck {
       max-width: 370px; // Removed the duplicate max-width
+      position: relative;
+      top: -153px;
+      border: 20px;
+      left: 208px;
+      width: 370px;
+      height: 370px;
     }
   }
 
@@ -676,5 +686,4 @@ header {
     }
   }
 }
-
 
